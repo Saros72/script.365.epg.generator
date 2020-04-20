@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category label="Generator">
+        <setting label="Název souboru" type="text" id="file_name" default="epg.xml"/>
+        <setting label="Složka pro uložení" type="folder" id="folder" default =""/>
+        <setting label="Počet dní" type="slider" id="num_days" default="2" range="1,1,7" option="int" />
+        <setting id="day_enabled" type="bool" label="Den zpětně" default="true" />
+        <setting id="logo_enabled" type="bool" label="Loga kanálů" default="false" />
+        <setting label="Kategorie" id="category" type="enum" values="Cz/Sk|Všechny|Vlastní" default="0"/>
+    </category>
+    <category label="FTP">
+        <setting id="ftp_enabled" type="bool" label="Nahrát na FTP server" default="false" />
+        <setting label="Server" type="text" id="ftp_server" default="ftp.server.cz"/>
+        <setting label="Port" type="number" id="ftp_port" default="21"/>
+        <setting label="Login" type="text" id="ftp_login" default=""/>
+        <setting label="Heslo" type="text" id="ftp_password" option="hidden" enable="!eq(-1,false)" default=""/>
+        <setting label="Složka" type="text" id="ftp_folder" default="/"/>
+    </category>
+    <category label="Aktualizace">
+        <setting id="start_enabled" type="bool" label="Aktualizovat po startu" default="false" />
+        <setting id="auto_enabled" type="bool" label="Aktualizovat automaticky" default="false" />
+        <setting label="Čas aktualizace" id="auto_time" type="time" default="00:00" visible="eq(-1,true)" />
+        <setting label="Spustit" type="action" option="close" action="RunScript(special://home/addons/script.365.epg.generator/runner.py)" visible="eq(-2,true)"/>
+        <setting type="sep"/>
+        <setting id="notice" type="bool" label="Upozornění" default="true" />
+    </category>
+    <category label="Vlastní kanály">
+        <setting label="Vybrat" type="action" option="close" action="RunScript(special://home/addons/script.365.epg.generator/custom.py)" />
+    </category>
+</settings>
