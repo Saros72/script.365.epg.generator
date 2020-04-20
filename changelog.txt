@@ -1,0 +1,24 @@
+[B]v1.3.3[/B]
+- Možnost vypnout upozornění při automatické aktualizaci
+
+[B]v1.3.2[/B]
+- Drobné opravy
+
+[B]v1.3.1[/B]
+- Drobné opravy
+
+[B]v1.3.0[/B]
+- Přidán kanál BBC Earth
+
+[B]v1.2.1[/B]
+- Možnost vložit loga kanálů (volitelně)
+
+[B]v1.2.0[/B]
+- Možnost přidat vlastní kanály
+
+[B]v1.1.0[/B]
+- Opraveno řazení programů
+- Přidáno spuštění po startu a automatická aktualizace v zadaný čas
+
+[B]v1.0.0[/B]
+- První vydání
