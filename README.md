@@ -3,7 +3,7 @@
 365 EPG Generator - Doplněk pro vygenerování XML souboru pro EPG
 <p>
 Vlastnosti:
-  - 142 českých, 53 slovenských kanálů, celkem 733
+<br>  - 142 českých, 53 slovenských kanálů, celkem 733
   - EPG na 7 dní + 1 den zpětně (volitelné)
   - Základní informace o pořadu (Titulek - krátký popis)
   - Kategorie: Cz-Sk / Všechny / Vlastní
